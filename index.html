@@ -40,13 +40,13 @@
       border-radius: 4px;
     }
     .domain {
-      color: #2ecc71; 
+      color: #2ecc71;
       background-color: #d4efdf;
       padding: 2px 4px;
       border-radius: 4px;
     }
     .path {
-      color: #3498db; 
+      color: #3498db;
       background-color: #d6eaf8;
       padding: 2px 4px;
       border-radius: 4px;
@@ -80,3 +80,45 @@
   </style>
 </head>
 <body>
+
+  <h2>Trực quan hóa thành phần URL bằng CSS</h2>
+  <p>Dưới đây là một URL mẫu đã được phân tách và tô màu làm nổi bật trực quan bằng các thẻ <code>&lt;span&gt;</code> định danh:</p>
+
+  <div class="url-display">
+    <span class="protocol">https://</span><span class="domain">example.com</span><span class="path">/products/list</span><span class="other">?page=2#top</span>
+  </div>
+
+  <h3>Bảng chú thích mã màu</h3>
+  <table class="legend-table">
+    <thead>
+      <tr>
+        <th>Thành phần</th>
+        <th>Mã Class</th>
+        <th>Ý nghĩa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="badge" style="background-color: #fadbd8; border: 1px solid #e74c3c;"></span><strong>Protocol</strong></td>
+        <td><code>.protocol</code></td>
+        <td>Giao thức kết nối an toàn (https)</td>
+      </tr>
+      <tr>
+        <td><span class="badge" style="background-color: #d4efdf; border: 1px solid #2ecc71;"></span><strong>Domain</strong></td>
+        <td><code>.domain</code></td>
+        <td>Tên miền định danh của trang web</td>
+      </tr>
+      <tr>
+        <td><span class="badge" style="background-color: #d6eaf8; border: 1px solid #3498db;"></span><strong>Path</strong></td>
+        <td><code>.path</code></td>
+        <td>Đường dẫn tới thư mục hoặc tệp cụ thể</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    console.log("Đã tải xong cấu trúc HTML và các class CSS nổi bật!");
+  </script>
+
+</body>
+</html>
