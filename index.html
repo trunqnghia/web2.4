@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tô màu nổi bật thành phần URL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 8px;
+    }
+    
+    .url-display {
+      background-color: #ffffff;
+      border: 1px solid #ced4da;
+      border-radius: 6px;
+      padding: 15px 20px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.25rem;
+      font-weight: bold;
+      word-break: break-all;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+
+    .protocol {
+      color: #e74c3c;
+      background-color: #fadbd8;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .domain {
+      color: #2ecc71; 
+      background-color: #d4efdf;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .path {
+      color: #3498db; 
+      background-color: #d6eaf8;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .other {
+      color: #95a5a6;
+    }
+
+    .legend-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+    }
+    .legend-table th, .legend-table td {
+      border: 1px solid #dee2e6;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    .legend-table th {
+      background-color: #e9ecef;
+    }
+    .badge {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
